@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <ul id="nav-menu">
+          <li><a href="./Home.html">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="./Services.html">SERVICES</a></li>
+          <li><a href="./Contact.html">CONTACT</a></li>
+          <li><a href="./Skills.html">SKILLS</a></li>
+        </ul>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById('nav-menu');
+          menu.classList.toggle('active');
+        }
+      </script>
+    
+    <h1 style="color: blueviolet;">Women in technology Uganda.</h1>
+    <p>We are a non governmental organisation which helps young women to acquire computer skills</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+@media(max-width:768px) {
+  nav ul{
+    display: none;
+    flex-direction: column;
+  }
+  nav ul.active{
+    display: block;
+  }
+  .menu-icon{
+    display: block;
+    color: white;
+    font-size: 24px;
+  }
+}
+  
+    
