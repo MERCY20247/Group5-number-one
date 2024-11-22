@@ -1,0 +1,72 @@
+nav {
+    background-color: orchid;
+    overflow: hidden;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    border-radius: 30px;
+    
+  }
+  .logo{
+    font-size: xx-large; 
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 170%;
+  }
+  
+  nav a:hover {
+    background-color: #14c44f;
+  }
+  
+  #nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Mobile styling */
+  @media (max-width: 768px) {
+    #nav-menu {
+      display: none; /* Hide menu by default on small screens */
+      flex-direction: column;
+      width: 100%;
+      background-color: orchid;
+      position: absolute;
+      top: 50px; /* Positioning the dropdown below the navbar */
+      left: 0;
+    }
+  
+    #nav-menu.active {
+      display: flex; /* Show the menu when the 'active' class is added */
+    }
+  
+    nav a {
+      padding: 15px;
+      text-align: center;
+      width: 100%;
+      border-top: 1px solid #575757;
+    }
+  
+    .menu-icon {
+      display: block; /* Show the hamburger icon on mobile */
+    }
+  }
+  
+  
+  
